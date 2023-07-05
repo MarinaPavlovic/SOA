@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="90c43539-7768-41ad-a275-74ab27d743ea" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/components/apartments/ApartmentItemHost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/apartments/ApartmentItemHost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/apartments/ApartmentList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/apartments/ApartmentList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/apartments/ReservApartments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/apartments/ReservApartments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/filter/Filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/filter/Filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Apartments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Apartments.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2PbT6IuKlEzbeSFK6vtDq9KibBa" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/PC/Desktop/Git-Apartment/apartmentProject"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="90c43539-7768-41ad-a275-74ab27d743ea" name="Changes" comment="" />
+      <created>1683724605927</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683724605927</updated>
+    </task>
+    <servers />
+  </component>
+</project>

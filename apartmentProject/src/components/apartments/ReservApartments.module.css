@@ -1,0 +1,43 @@
+.component{
+    margin: 20px;
+    border-top: 1px solid #77002e;
+    color: #77002e;
+    padding: 10px;
+
+}
+.content{
+    display: flex;
+}
+
+
+.image img{
+    width: 200px;
+}
+.image{
+    margin-right: 10px;
+}
+.editButton{
+    width: 80px;
+    border-radius: 5px;
+    border: 1px solid #77002e;
+    color: #77002e;
+    background-color: white;
+    margin-right: 10px;
+}
+.editButton:hover,
+.deleteButton:hover
+{
+    
+    color: #77002e;
+    background-color: #ffe2ed;
+
+}
+
+.deleteButton{
+    width: 80px;
+    border-radius: 5px;
+    background-color: #77002e;
+    color: white;
+    border: 1px solid #77002e;
+}
+
