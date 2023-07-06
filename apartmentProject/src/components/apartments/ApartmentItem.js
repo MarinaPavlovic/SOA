@@ -5,20 +5,27 @@ import ApartmentCard from "./ApartmentCard";
 import Backdrop from "./Beckdrop";
 import AuthContext from "../../store/auth-contex";
 import MessageModal from "../ui/MessageModal";
+import CommentCard from "../comments/CommentCard";
 
 function ApartmentItem(props) {
 	const user = useContext(AuthContext);
 	const [imageNum, setImageNum] = useState(0);
 	const [notification, setNotification] = useState(false);
 	const [cardIsOpen, setCardIsOpen] = useState(false);
+	const [comments, setComments] = useState(false);
 	function moreHandler() {
 		setCardIsOpen(true);
 	}
 	function closeCard() {
 		setCardIsOpen(false);
+		setComments(false);
 	}
 	function closeMessage() {
 		setNotification(false);
+	}
+
+	function openComments() {
+		setComments(true);
 	}
 
 	function toFavorite() {
@@ -79,7 +86,7 @@ function ApartmentItem(props) {
 					)}
 					{user.isLoggedIn && (
 						<div className={classes.comments}>
-							<h6>Comments</h6>
+							<h6 onClick={openComments}>Comments</h6>
 						</div>
 					)}
 					{notification && (
@@ -107,6 +114,8 @@ function ApartmentItem(props) {
 				/>
 			)}
 			{cardIsOpen && <Backdrop onCancle={closeCard} />}
+			{comments && <CommentCard id={props.id} onCancle={closeCard} />}
+			{comments && <Backdrop onCancle={closeCard} />}
 		</li>
 	);
 }

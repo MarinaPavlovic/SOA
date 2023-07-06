@@ -80,10 +80,10 @@
     border: 1px solid #77002e;
 }
 
-.comments{
+.comments h6{
 margin: 10px;
 color: #77002e;
 }
-.comments :hover{
+.comments h6 :hover{
   color: black;
 }

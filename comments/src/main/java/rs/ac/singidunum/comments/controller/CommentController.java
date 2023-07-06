@@ -23,7 +23,7 @@ public class CommentController {
     }
 
     @GetMapping("{id}")
-    public List<CommentDTO> getApartmentComm (@RequestParam("id") Integer apartmentId){
+    public List<CommentDTO> getApartmentComm (@PathVariable("id") Integer apartmentId){
         return commentService.getAllApartmentsComm(apartmentId);
     }
 
@@ -32,7 +32,7 @@ public class CommentController {
         return commentService.createComment(commentDTO);
     }
     @DeleteMapping("{id}")
-    void deleteComment (@RequestParam("id") Integer id){
+    void deleteComment (@PathVariable("id") Integer id){
         commentService.delete(id);
     }
 

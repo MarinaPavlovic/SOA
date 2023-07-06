@@ -39,7 +39,7 @@ const AuthForm = () => {
 				return res.json();
 			})
 			.then((data) => {
-				authCtx.login(data.idToken, data.id, data.role);
+				authCtx.login(data.idToken, data.id, data.role, username);
 				if (data.role === "HOST") {
 					history.push("/myApartments");
 				} else {

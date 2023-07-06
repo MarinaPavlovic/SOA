@@ -8,9 +8,9 @@ import rs.ac.singidunum.comments.entity.CommentEntity;
 
 import java.util.List;
 
-@Repository
+
 public interface ICommentRepository extends JpaRepository<CommentEntity, Integer> {
 
-    @Query(nativeQuery = true , value = "SELECT * FROM comments WHERE apartmentId= :apartmentId")
+    @Query(nativeQuery = true , value = "SELECT * FROM comments WHERE apartment_id= :apartmentId")
     List<CommentEntity> apartmentComments (@Param("apartmentId") Integer apartmentId);
 }

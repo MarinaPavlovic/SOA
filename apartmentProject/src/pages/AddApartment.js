@@ -32,7 +32,7 @@ function AddApartmentPage() {
 
 		const enteredName = inputName.current.value;
 		const enteredDescription = inputDescription.current.value;
-		const enteredCountry = inputCity.current.value;
+		const enteredCountry = inputCountry.current.value;
 		const enteredCity = inputCity.current.value;
 		const enteredAddress = inputAddress.current.value;
 		const enteredPrice = parseInt(inputPrice.current.value);
