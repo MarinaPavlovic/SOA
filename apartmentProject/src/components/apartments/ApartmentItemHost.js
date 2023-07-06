@@ -4,10 +4,13 @@ import { useState } from "react";
 import ApartmentEditCard from "./ApartmentEditCard";
 import Backdrop from "./Beckdrop";
 import DeleteCard from "../ui/DeleteCard";
+import CommentCard from "../comments/CommentCard";
 function ApartmentItemHost(props) {
 	const [imageNum, setImageNum] = useState(0);
 	const [deleteCard, setDeleteCard] = useState(false);
 	const [cardIsOpen, setCardIsOpen] = useState(false);
+	const [comments, setComments] = useState(false);
+
 	const apartments = props.apartments;
 	const setApartments = props.setApartments;
 	function moreHandler() {
@@ -15,9 +18,13 @@ function ApartmentItemHost(props) {
 	}
 	function closeCard() {
 		setCardIsOpen(false);
+		setComments(false);
 	}
 	function closeDeleteCard() {
 		setDeleteCard(false);
+	}
+	function openComments() {
+		setComments(true);
 	}
 	function deleteApartment() {
 		fetch("http://localhost:1313/apartment/" + props.id, {
@@ -61,6 +68,9 @@ function ApartmentItemHost(props) {
 						<b>{props.pricePerNight}$</b>
 					</p>
 				</div>
+				<div className={classes.comments}>
+					<h6 onClick={openComments}>Comments</h6>
+				</div>
 
 				<div className={classes.actions}>
 					<button onClick={moreHandler}>Edit</button>
@@ -98,6 +108,8 @@ function ApartmentItemHost(props) {
 				/>
 			)}
 			{deleteCard && <Backdrop onCancle={closeDeleteCard} />}
+			{comments && <CommentCard id={props.id} onCancle={closeCard} />}
+			{comments && <Backdrop onCancle={closeCard} />}
 		</li>
 	);
 }

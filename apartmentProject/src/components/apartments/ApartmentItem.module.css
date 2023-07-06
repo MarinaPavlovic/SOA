@@ -81,8 +81,11 @@
 }
 
 .comments h6{
+  cursor: pointer;
+
 margin: 10px;
 color: #77002e;
+
 }
 .comments h6 :hover{
   color: black;
